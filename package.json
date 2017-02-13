@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/BarryCarlyon/quickpassword#readme",
   "dependencies": {
-    "bcrypt": "^0.8.5"
+    "bcrypt": "^1.0.2"
   }
 }
