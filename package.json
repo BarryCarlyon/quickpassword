@@ -23,6 +23,6 @@
     "node": ">= 10.0.0"
   },
   "dependencies": {
-    "bcrypt": "3.0.7"
+    "bcrypt": "4.0.1"
   }
 }
