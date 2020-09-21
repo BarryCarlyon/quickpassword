@@ -2,9 +2,9 @@ A very very quick and dirty password encrypter using bcypt based on [this Stacko
 
 # Comparison
 
-    var quickpassword = require('quickpassword');
+    const quickpassword = require('quickpassword');
 
-    quickpassword.comparePassword(input_string, encrypted_password_from_db, function(err, isMatch) {
+    quickpassword.comparePassword(input_string, encrypted_password_from_db, (err, isMatch) => {
         if (err) {
             console.log('Password Err');
         } else {
