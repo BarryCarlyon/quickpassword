@@ -18,10 +18,12 @@ A very very quick and dirty password encrypter using bcypt based on [this Stacko
 
 # Generation (for storage)
 
-        password.cryptPassword(entry, (err, ret) => {
-            if (err) {
-                console.log('Failed');
-            } else {
-                // ret contains encrypted password for storage
-            }
-        });
+    const quickpassword = require('quickpassword');
+    
+    quickpassword.cryptPassword(entry, (err, ret) => {
+        if (err) {
+            console.log('Failed');
+        } else {
+            // ret contains encrypted password for storage
+        }
+    });
