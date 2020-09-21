@@ -1,4 +1,4 @@
-A very vyer quick and dirty password encrypter using bcypt based on [this Stackoverflow Question](http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords)
+A very very quick and dirty password encrypter using bcypt based on [this Stackoverflow Question](http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords)
 
 # Comparison
 
