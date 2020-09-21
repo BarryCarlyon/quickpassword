@@ -18,7 +18,7 @@ A very very quick and dirty password encrypter using bcypt based on [this Stacko
 
 # Generation (for storage)
 
-        password.cryptPassword(entry, function(err, ret) {
+        password.cryptPassword(entry, (err, ret) => {
             if (err) {
                 console.log('Failed');
             } else {
