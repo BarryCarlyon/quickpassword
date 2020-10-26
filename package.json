@@ -1,5 +1,5 @@
 {
-  "name": "@barrycarlyon/quickpassword",
+  "name": "quickpassword",
   "version": "1.0.3",
   "description": "A quick and dirty password processor, shoved into GitHub for easier deployment for internals",
   "main": "quickpassword.js",
@@ -21,9 +21,6 @@
   },
   "dependencies": {
     "bcrypt": "5.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "directories": {
     "doc": "docs"
