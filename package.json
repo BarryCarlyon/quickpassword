@@ -26,6 +26,13 @@
     "doc": "docs"
   },
   "keywords": [
-    "password"
+    "password",
+    "bcrypt",
+    "password",
+    "auth",
+    "authentication",
+    "encryption",
+    "crypt",
+    "crypto"
   ]
 }
