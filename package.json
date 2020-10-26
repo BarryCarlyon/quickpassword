@@ -1,5 +1,5 @@
 {
-  "name": "quickpassword",
+  "name": "@barrycarlyon/quickpassword",
   "version": "1.0.3",
   "description": "A quick and dirty password processor, shoved into GitHub for easier deployment for internals",
   "main": "quickpassword.js",
@@ -10,11 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/BarryCarlyon/quickpassword.git"
   },
-  "author": {
-    "name": "Barry Carlyon",
-    "url": "https://github.com/BarryCarlyon"
-  },
-  "license": "ISC",
+  "author": "Barry Carlyon (https://github.com/BarryCarlyon)",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/BarryCarlyon/quickpassword/issues"
   },
@@ -25,5 +22,13 @@
   "dependencies": {
     "bcrypt": "5.0.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "password"
+  ]
 }
