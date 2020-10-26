@@ -34,8 +34,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@BarryCarlyon'
+          scope: '@barrycarlyon'
       - run: npm ci
+      - name: Publish to GitHub Package Registry
+      - run: echo "registry=https://npm.pkg.github.com/@barrycarlyon" >> .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GHTOKEN}}
