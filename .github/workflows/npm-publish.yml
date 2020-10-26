@@ -36,7 +36,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@barrycarlyon'
       - run: npm ci
-      - name: Publish to GitHub Package Registry
       - run: echo "registry=https://npm.pkg.github.com/@barrycarlyon" >> .npmrc
       - run: npm publish
         env:
