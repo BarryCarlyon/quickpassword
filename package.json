@@ -1,6 +1,6 @@
 {
   "name": "quickpassword",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A quick and dirty password processor, shoved into GitHub for easier deployment for internals",
   "main": "quickpassword.js",
   "scripts": {
