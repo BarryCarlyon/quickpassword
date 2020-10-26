@@ -34,9 +34,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@barrycarlyon'
+          scope: '@BarryCarlyon'
       - run: npm ci
-      - run: echo "registry=https://npm.pkg.github.com/@barrycarlyon" >> .npmrc
+      - run: echo "registry=https://npm.pkg.github.com/@BarryCarlyon" >> .npmrc
+      - run: echo "name=@BarryCarlyon/quickpassword" >> .npmrc
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GHTOKEN}}
