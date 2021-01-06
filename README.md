@@ -1,4 +1,4 @@
-A very very quick and dirty password encrypter using bcypt based on [this Stackoverflow Question](http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords)
+A very very quick and dirty password encrypter using bcrypt based on [this Stackoverflow Question](http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords)
 
 # Comparison
 
@@ -27,3 +27,7 @@ A very very quick and dirty password encrypter using bcypt based on [this Stacko
             // ret contains encrypted password for storage
         }
     });
+
+# Upgrading node
+
+If/when you upgrade node, this module (well bcrypt) will need to be recompiled, `npm rebuild` should get you going!
