@@ -1,5 +1,9 @@
 A very very quick and dirty password encrypter using bcypt based on [this Stackoverflow Question](http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords)
 
+# Updating node
+
+If you update Node, you will need to run `npm install` in order to rebuild this module.
+
 # Comparison
 
     const quickpassword = require('quickpassword');
