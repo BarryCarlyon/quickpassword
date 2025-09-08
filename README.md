@@ -4,6 +4,15 @@ A very very quick and dirty password encrypter using bcrypt based on [this Stack
 
 If you update Node, you will need to run `npm install` in order to rebuild this module.
 
+# Notes
+
+A note from the [bcrypt readme][bcryptreadme]
+
+A library to help you hash passwords.
+
+You can read about [bcrypt in Wikipedia][bcryptwiki] as well as in the following article:
+[How To Safely Store A Password][codahale]
+
 # Comparison
 
     const quickpassword = require('quickpassword');
@@ -23,7 +32,7 @@ If you update Node, you will need to run `npm install` in order to rebuild this 
 # Generation (for storage)
 
     const quickpassword = require('quickpassword');
-    
+
     quickpassword.cryptPassword(entry, (err, ret) => {
         if (err) {
             console.log('Failed');
@@ -35,3 +44,7 @@ If you update Node, you will need to run `npm install` in order to rebuild this 
 # Upgrading node
 
 If/when you upgrade node, this module (well bcrypt) will need to be recompiled, `npm rebuild` should get you going!
+
+[bcryptwiki]: https://en.wikipedia.org/wiki/Bcrypt
+[codahale]: http://codahale.com/how-to-safely-store-a-password/
+[bcryptreadme]: https://github.com/kelektiv/node.bcrypt.js?tab=readme-ov-file#nodebcryptjs

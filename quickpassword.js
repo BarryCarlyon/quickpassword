@@ -1,8 +1,10 @@
 //http://stackoverflow.com/questions/14015677/node-js-encryption-of-passwords
 const bcrypt = require('bcrypt');
 
+const saltRounds = 10;
+
 exports.cryptPassword = (password, callback) => {
-   bcrypt.genSalt(10, (err, salt) => {
+   bcrypt.genSalt(saltRounds, (err, salt) => {
     if (err)
       return callback(err);
 
@@ -12,8 +14,8 @@ exports.cryptPassword = (password, callback) => {
   });
 };
 
-exports.comparePassword = (password, userPassword, callback) => {
-   bcrypt.compare(password, userPassword, (err, isPasswordMatch) => {
+exports.comparePassword = (plaintextPassword, hashedPassword, callback) => {
+   bcrypt.compare(plaintextPassword, hashedPassword, (err, isPasswordMatch) => {
       if (err)
         return callback(err);
       return callback(null, isPasswordMatch);
