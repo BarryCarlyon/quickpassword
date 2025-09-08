@@ -17,7 +17,7 @@ You can read about [bcrypt in Wikipedia][bcryptwiki] as well as in the following
 
 I mean _conceptually_ under ESM, this library is over kill....
 
-```
+```js
 import { cryptPassword, comparePassword } from "quickpassword";
 
 let passwordValid = await comparePassword(
