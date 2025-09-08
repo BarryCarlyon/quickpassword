@@ -1,8 +1,7 @@
 {
   "name": "quickpassword",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A quick and dirty password processor, shoved into GitHub for easier deployment for internals",
-  "main": "quickpassword.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,5 +33,10 @@
     "encryption",
     "crypt",
     "crypto"
-  ]
+  ],
+  "exports": {
+    "import": "./quickpassword.js",
+    "require": "./quickpassword.cjs"
+  },
+  "type": "module"
 }
